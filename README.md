@@ -19,3 +19,25 @@ Options:
                               the subtitle file, default: false
   --help                      Show this message and exit.
 ```
+
+## Installation
+
+### Linux
+
+**Install requirements.txt:**
+```
+pip install requirements.txt 
+```
+
+**Make symbolic link and add interpretor in the first line:**
+> Before execute the command below, replace `/local/to/subtitle-automation.py` with the path to your `aubtitle-automation.py`
+```shell
+sed -i '1i #!/usr/bin/python3' subtitle-automation.py
+ln -sv /local/to/subtitle-automation.py /usr/local/bin/subtitle-automation 
+chmod +x subtitle-automation.py
+```
+
+## Run command
+```
+subtitle-automation --help
+```
