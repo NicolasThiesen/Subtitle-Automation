@@ -32,7 +32,7 @@ apt install -y ffmpeg
 ```
 
 **Make symbolic link and add interpretor in the first line:**
-> Before execute the command below, replace `/local/to/subtitle-automation.py` with the path to your `aubtitle-automation.py`
+> Before execute the command below, replace `/local/to/subtitle-automation.py` with the path to your `subtitle-automation.py`
 ```shell
 sed -i '1i #!/usr/bin/python3' subtitle-automation.py
 ln -sv /local/to/subtitle-automation.py /usr/local/bin/subtitle-automation 
