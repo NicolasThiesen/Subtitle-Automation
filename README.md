@@ -24,9 +24,11 @@ Options:
 
 ### Linux
 
-**Install requirements.txt:**
-```
-pip install -r requirements.txt 
+**Install:**
+```shell
+pip install -r requirements.txt
+apt update
+apt install -y ffmpeg
 ```
 
 **Make symbolic link and add interpretor in the first line:**
